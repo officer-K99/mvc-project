@@ -1,0 +1,15 @@
+<%- include('includes/header.ejs') %> 
+    <main>
+        <section>
+            <h2>لیست محصولات</h2>
+            <% if(products.length > 0) {  %>
+                <% for(let item of products){ %>
+                    <p><%= item.title %> </p>
+                <% } %>  
+            <% } else{ %>
+                <p>محصولی یافت نشد!</p>     
+            <% }  %> 
+        </section>
+    </main>
+</body>
+</html>
